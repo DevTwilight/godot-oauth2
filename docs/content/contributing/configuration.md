@@ -47,10 +47,13 @@ gradle.another=another.gradle.kts
 ```
 
 **Key Properties:**
-- `pluginNodeName` - The name of the main plugin node used in Godot
-- `pluginVersion` - Semantic version for releases
-- `godotVersion` - Must match your target Godot version
-- `godotReleaseType` - Determines which Godot binary to download
+
+| Property | Description |
+|----------|-------------|
+| pluginNodeName | The name of the main plugin node used in Godot |
+| pluginVersion | Semantic version for releases |
+| godotVersion | Must match your target Godot version |
+| godotReleaseType | Determines which Godot binary to download |
 
 ## <img src="../images/icon.png" width="20"> Gradle Configuration
 

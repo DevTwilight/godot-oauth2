@@ -50,6 +50,7 @@ open ios/demo.xcodeproj
 ## Automated Testing
 
 Consider adding:
+
 - Unit tests for native code
 - UI tests for demo app
 - CI/CD pipeline (GitHub Actions)

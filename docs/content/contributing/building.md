@@ -7,9 +7,11 @@ icon: fontawesome/solid/hammer
 
 There are three main build scripts located in the `script` directory.
 
-- `build.sh` - the main build script
-- `build_android.sh` - build script for Android platform
-- `build_ios.sh` - build script for iOS platform
+| Script | Description |
+|--------|-------------|
+| `build.sh` | The main build script |
+| `build_android.sh` | Build script for Android platform |
+| `build_ios.sh` | Build script for iOS platform |
 
 ### <img src="../images/icon.png" width="20"> Cross-Platform Builds
 
@@ -32,11 +34,13 @@ Cross-platform builds with the `build.sh` script.
 
 #### Output Locations
 
-- **GDScript code:** `addon/build/output/`
-- **Debug AAR:** `android/build/outputs/aar/*-debug.aar`
-- **Release AAR:** `android/build/outputs/aar/*-release.aar`
-- **Built plugin:** `common/build/plugin/`
-- **Release archive:** `release/OAuth2Plugin-*-v*.zip`
+| Output | Location |
+|--------|----------|
+| **GDScript code** | `addon/build/output/` |
+| **Debug AAR** | `android/build/outputs/aar/*-debug.aar` |
+| **Release AAR** | `android/build/outputs/aar/*-release.aar` |
+| **Built plugin** | `common/build/plugin/` |
+| **Release archive** | `release/OAuth2Plugin-*-v*.zip` |
 
 ### <img src="../images/icon.png" width="20"> Android Builds
 
@@ -87,7 +91,7 @@ If using Android Studio, make sure to open the root Gradle project from the `com
 ```
 
 !!! note
- Options after `--` are passed to `build_ios.sh`
+    Options after `--` are passed to `build_ios.sh`
 
 ```bash
 # Full build (first time - downloads Godot)
@@ -129,27 +133,29 @@ If using Android Studio, make sure to open the root Gradle project from the `com
 The iOS build process involves several steps:
 
 1. **Download Godot** (if needed):
-   - Downloads the official Godot binary from GitHub
-   - Version specified in `config.properties`
-   - Extracted to `ios/godot/` by default, or to the path set by `godot.dir` in `common/local.properties`
+    - Downloads the official Godot binary from GitHub
+    - Version specified in `config.properties`
+    - Extracted to `ios/godot/` by default, or to the path set by `godot.dir` in `common/local.properties`
 
 2. **Generate Headers**:
-   - Starts a Godot build to generate C++ headers
-   - Timeout prevents full Godot build (we only need headers)
-   - Default timeout: 40 seconds (increase if needed)
+    - Starts a Godot build to generate C++ headers
+    - Timeout prevents full Godot build (we only need headers)
+    - Default timeout: 40 seconds (increase if needed)
 
 3. **Add Swift Packages**:
-   - Resolves package dependencies for Xcode
+    - Resolves package dependencies for Xcode
 
 4. **Build XCFrameworks**:
-   - Builds for iOS device (arm64)
-   - Builds for iOS simulator (arm64, x86_64)
-   - Creates universal XCFrameworks for debug and release
+    - Builds for iOS device (arm64)
+    - Builds for iOS simulator (arm64, x86_64)
+    - Creates universal XCFrameworks for debug and release
 
 #### Output Locations
 
-- **Godot source:** `ios/godot/` (default) or path set by `godot.dir` in `common/local.properties`
-- **Build artifacts:** `ios/build/`
-- **Frameworks:** `ios/build/framework/`
-- **Archives:** `ios/build/lib/*.xcarchive`
-- **Release archive:** `release/OAuth2Plugin-iOS-v*.zip`
+| Output | Location |
+|--------|----------|
+| **Godot source** | `ios/godot/` (default) or path set by `godot.dir` in `common/local.properties` |
+| **Build artifacts** | `ios/build/` |
+| **Frameworks** | `ios/build/framework/` |
+| **Archives** | `ios/build/lib/*.xcarchive` |
+| **Release archive** | `release/OAuth2Plugin-iOS-v*.zip` |

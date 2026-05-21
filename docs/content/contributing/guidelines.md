@@ -51,6 +51,7 @@ docs: update installation instructions
 ## Reporting Issues
 
 Include:
+
 - Plugin version
 - Godot version
 - Platform (Android/iOS)
@@ -58,8 +59,6 @@ Include:
 - Steps to reproduce
 - Expected vs actual behavior
 - Relevant logs
-
----
 
 # <img src="../images/icon.png" width="24"> Additional Resources
 
