@@ -1,6 +1,6 @@
 ---
 title: In-App Browser Authentication
-icon: fontawesome/solid/browser
+icon: fontawesome/solid/user-shield
 ---
 
 # <img src="../images/icon.png" width="20"> In-App Browser Authentication

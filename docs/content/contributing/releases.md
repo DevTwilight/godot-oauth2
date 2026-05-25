@@ -13,6 +13,7 @@ icon: fontawesome/solid/tag
 ```
 
 This creates:
+
 - `release/OAuth2Plugin-Android-v*.zip`
 - `release/OAuth2Plugin-iOS-v*.zip`
 - `release/OAuth2Plugin-Multi-v*.zip` (combined)
