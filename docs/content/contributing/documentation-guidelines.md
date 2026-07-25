@@ -27,7 +27,7 @@ Text before list.
 ## Nested Lists
 
 - Nested list items must be indented using **4 spaces per level**.
-- This ensures compatibility with Python Markdown and MkDocs rendering.
+- This ensures compatibility with Python Markdown.
 
 Correct:
 
@@ -43,8 +43,7 @@ Incorrect:
 
 ## Admonitions
 
-- Admonition blocks `!!! type` must be followed by a **blank line**
-- Content inside admonitions must be indented by **4 spaces**
+- Content inside admonitions must be indented by **4 spaces**.
 
 Correct:
 
@@ -60,6 +59,11 @@ This will not render correctly.
 
 When in doubt, prefer:
 
-- Blank line before block elements (lists, admonitions, tables)
+- Blank line before block elements (lists, tables)
 - 4-space indentation for nested content
 - Consistency over minimal indentation
+
+!!! note "Writing Configuration"
+    The configuration file [zensical.toml](https://github.com/godot-mobile-plugins/godot-oauth2/blob/main/docs/zensical.toml) uses [TOML v1.0.0 syntax](https://toml.io/en/v1.0.0) for consistency and readability.
+
+    TOML v1.1.0 is not required for the configuration, as it mainly introduces syntax relaxations and convenience features.
