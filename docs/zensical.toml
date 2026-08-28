@@ -5,6 +5,7 @@ site_author = "godot-mobile-plugins"
 copyright = " Copyright (c) 2025 Godot Mobile Plugins"
 site_url = "https://godot-mobile-plugins.github.io/godot-oauth2/"
 
+strict = true
 docs_dir  = "content"
 use_directory_urls = false
 edit_uri  = "edit/main/docs/content/"
